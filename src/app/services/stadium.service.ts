@@ -25,6 +25,7 @@ export class StadiumService {
     formData.append("name",stadiumObj.name);
     formData.append("city",stadiumObj.city);
     formData.append("capacity",stadiumObj.capacity);
+    formData.append("tId", stadiumObj.tId);
     formData.append("img",img);
   return this.httpClient.post<{ msg: any }>(this.stadiumUrl,formData);
   }

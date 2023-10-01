@@ -519,6 +519,10 @@ app.delete("/api/players/:id", (req, res) => {
             res.json({ msg: "Error" })
     });
 });
+//Business Logic : test
+app.get("/api/test", (req, res) => {
+    console.log("Here into BL: test");
+});
 
 // Business Logic : Update Player
 app.put("/api/players", (req, res) => {
